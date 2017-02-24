@@ -1,0 +1,8 @@
+{
+  "name": "sms_to_telegram/sms_to_telegram",
+  "type": "project",
+  "require": {
+    "php": ">=5.5.0",
+    "longman/telegram-bot": "*"
+  }
+}
