@@ -8,13 +8,16 @@ Receive SMS messages to Telegram account through Twilio
 
 ## Installation
 1. Change file mode for *sms.log* to allow write in the file. For example:
+
     ```
     chmod 777 sms.log
     ```
 2. Run composer update to install dependencies:
+
     ```
     composer update
     ```
+    
 ## Configuration
 
 ### Twilio
@@ -26,6 +29,7 @@ See Twilio documentation for more info - https://support.twilio.com/hc/en-us/art
   - To create a new bot see the instruction - https://core.telegram.org/bots#creating-a-new-bot
   - You will get a token and a bot name. Change **BOT_NAME** and **API_KEY** in the php file.
   - Add the new bot in your telegram account. Type any word (like "test"). Then go to https://api.telegram.org/bot<**API_KEY**>/getUpdates (change <**API_KEY**> with your token) and you will see something like this:
+  
   ```json
   {"ok":true,"result":[{"update_id":279129775,
 "message":{"message_id":11,"from":{"id":123456,"first_name":"Name","username":"username"},"date":1487955282,"text":"1"}}]}
